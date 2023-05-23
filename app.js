@@ -57,7 +57,7 @@ forecastApp.directive("weatherReport", function () {
     scope: {
       weatherDay: "=",
       weatherTemprature: "=",
-      waatherWind: "=",
+      weatherWind: "=",
     },
   };
 });
