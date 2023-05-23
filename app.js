@@ -46,3 +46,18 @@ forecastApp.controller("forecastController", [
     console.log($scope.weatherResults);
   },
 ]);
+
+// Directives
+
+forecastApp.directive("weatherReport", function () {
+  return {
+    restrict: "E",
+    templateUrl: "directives/weatherReport.htm",
+    replace: true,
+    scope: {
+      weatherDay: "=",
+      weatherTemprature: "=",
+      waatherWind: "=",
+    },
+  };
+});
